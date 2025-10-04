@@ -57,7 +57,7 @@ export default function Home() {
               height={50}
               className="rounded-full border-2 border-[#FF6B6B]"
             />
-            <span className="text-2xl font-bold text-[#FF6B6B] tracking-tight">MONDAY COFFEE</span>
+            <span className="text-2xl font-bold tracking-tight animate-gradient">MONDAY COFFEE</span>
           </motion.div>
           <div className="hidden md:flex gap-8 font-medium">
             <a href="#takingspace" className="hover:text-[#FF6B6B] transition-colors">Our Mission</a>
@@ -79,13 +79,22 @@ export default function Home() {
       </motion.nav>
 
       {/* Hero Section - Bold Statement */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-black via-[#FF6B6B]/10 to-black">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.1 }}
+          animate={{ opacity: 0.4 }}
           transition={{ duration: 2 }}
-          className="absolute inset-0 bg-[url('/images/MC1.jpg')] bg-cover bg-center opacity-10"
-        />
+          className="absolute inset-0"
+        >
+          <Image
+            src="/product3.jpg"
+            alt="Monday Coffee Product"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/60" />
+        </motion.div>
         <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -114,9 +123,6 @@ export default function Home() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="mb-8"
           >
-            <p className="text-3xl md:text-5xl font-bold mb-4 text-white">
-              BOLD. BLACK. UNAPOLOGETIC.
-            </p>
             <p className="text-xl md:text-2xl text-gray-300 italic max-w-4xl mx-auto">
               &quot;Mondays can be stale. Your coffee should never be.&quot;
             </p>
@@ -565,7 +571,7 @@ export default function Home() {
             height={120}
             className="mx-auto mb-6 rounded-full border-4 border-[#FF6B6B]"
           />
-          <h3 className="text-4xl font-black mb-4 text-[#FF6B6B] uppercase tracking-tight">MONDAY COFFEE</h3>
+          <h3 className="text-4xl font-black mb-4 uppercase tracking-tight animate-gradient">MONDAY COFFEE</h3>
           <p className="text-2xl font-bold text-white mb-2">Bold. Black. Unapologetic.</p>
           <p className="text-xl text-gray-400 mb-8 italic">&quot;Mondays can be stale. Your coffee should never be.&quot;</p>
           <div className="border-t border-[#FF6B6B]/30 pt-8 mt-8">
