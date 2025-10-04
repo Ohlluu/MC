@@ -113,7 +113,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-6xl md:text-8xl lg:text-9xl font-black mb-6 text-[#FF6B6B] tracking-tighter"
+            className="text-6xl md:text-8xl lg:text-9xl font-black mb-6 animate-gradient tracking-tighter"
           >
             MONDAY<br />COFFEE
           </motion.h1>
